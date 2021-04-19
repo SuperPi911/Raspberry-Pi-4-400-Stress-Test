@@ -19,6 +19,8 @@ Open a terminal and copy these commands:
 ``` bash
 cd ~
 sudo rm -r Raspberry-Pi-4-400-Stress-Test
+#Not required step
+sudo apt purge sysbench
 ```
 
 ## How it looks
