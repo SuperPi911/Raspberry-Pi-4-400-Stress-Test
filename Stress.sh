@@ -1,7 +1,13 @@
 #!/bin/bash
 
-NUM_RUNS=10
+PROGRAM="sysbench"
 
+if ! command -v ${PROGRAM} >/dev/null; then
+	sudo apt update
+	sudo apt install sysbench >/dev/null
+fi
+
+read -r -p "How many times would you like to run? " NUM_RUNS
 [ "$(whoami)" == "root" ] || { echo "Must be run as sudo!"; exit 1; }
 
 vcgencmd measure_temp
