@@ -1,13 +1,26 @@
-Raspberry Pi 4/400 Stress Test
+# Raspberry Pi 4/400 Stress Test
 
-Warning: this script needs sysbench
+## Installation
 
-sudo apt-get install sysbench
+Open a terminal and copy these commands:
+
+``` bash
+cd ~
+git clone https://github.com/SuperPi911/Raspberry-Pi-4-400-Stress-Test/
+cd Raspberry-Pi-4-400-Stress-Test
+chmod +x Stress.sh
+sudo ./Stress.sh
+```
+
+## Removal
+
+Open a terminal and copy these commands:
+
+``` bash
+cd ~
+sudo rm -r Raspberry-Pi-4-400-Stress-Test
+```
+
+## How it looks
 
 ![Screenshot](screenshot.png)
-
-you can modify the number of runs on the script line : "NUM_RUNS=10"
-
-
-
-Install : sudo apt-get install sysbench -y && git clone https://github.com/SuperPi911/Raspberry-Pi-4-400-Stress-Test.git && cd Raspberry-Pi-4-400-Stress-Test/ && rm README.md && rm screenshot.png
